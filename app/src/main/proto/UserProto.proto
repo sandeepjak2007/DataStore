@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+option java_package = "com.sandeep.datastore";
+option java_multiple_files = true;
+
+message UserProto {
+  int32 counter = 1;
+  string username = 2;
+  float amount = 3;
+  bool is_logged_in = 4;
+  double diameter = 5;
+  map<string, int32> numbers = 6;
+  repeated string friends = 7;
+}
